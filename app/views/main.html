@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <h4>Acceder a plataforma</h4>
+    <form name="form" ng-submit="login()">
+        <div class="form-group">
+            <label for="username">Usuario</label>
+            <input type="text" name="username" id="username" class="form-control" ng-model="username" required/>
+        </div>
+        <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" class="form-control" ng-model="password" required/>
+        </div>
+        <div class="form-actions">
+            <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary">Entrar</button>
+        </div> 
+    </form>  
+  </div>
+</div>
+<br>
